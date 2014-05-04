@@ -8,6 +8,6 @@ type Event struct {
 	Date time.Time
 	Child  Child
     Caregiver Caregiver
-    Events []Event
+    Notes string
 }
 
