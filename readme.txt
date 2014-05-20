@@ -5,7 +5,6 @@ package main
 import (
 	"fmt"
     "time"
-	//"github.com/ltruelove/newmath"
 	"github.com/ltruelove/childcare"
 )
 
