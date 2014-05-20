@@ -6,5 +6,5 @@ type Room struct {
 	Id       int
 	Name     string
 	Lead     Caregiver
-	Children []Child
+	Children []*Child
 }

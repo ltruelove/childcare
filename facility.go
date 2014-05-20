@@ -5,7 +5,7 @@ package childcare
 type Facility struct {
 	Id                                             int
 	Name, Street, Street2, City, State, Zip, Phone string
-	Children                                       []Child
+	Children                                       []*Child
 	Caregivers                                     []Caregiver
 	Rooms                                          []Room
 }

@@ -5,7 +5,7 @@ import "time"
 type Day struct {
 	Id        int
 	Date      time.Time
-	Child     Child
+	Child     *Child
 	Room      Room
 	Facility  Facility
 	Caregiver Caregiver

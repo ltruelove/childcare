@@ -11,10 +11,10 @@ import (
 
 func main() {
 	//children belong as a group to many things
-	child := childcare.Child{0, "Some", "Kid"}
-	child2 := childcare.Child{1, "Other", "Child"}
-	child3 := childcare.Child{2, "Third", "One"}
-	var childSlice = make([]childcare.Child, 2)
+	child := &childcare.Child{0, "Some", "Kid"}
+	child2 := &childcare.Child{1, "Other", "Child"}
+	child3 := &childcare.Child{2, "Third", "One"}
+	var childSlice = make([]*childcare.Child, 2)
 
 	childSlice[0] = child
 	childSlice[1] = child2
@@ -87,4 +87,3 @@ func main() {
 		childDay.Child.FullName(),
 		len(childDay.Events))
 }
-

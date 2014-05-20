@@ -5,7 +5,7 @@ import "fmt"
 type Caregiver struct {
 	Id                  int
 	FirstName, LastName string
-	Children            []Child
+	Children            []*Child
 }
 
 func (c Caregiver) FullName() string {

@@ -7,6 +7,6 @@ type Child struct {
 	FirstName, LastName string
 }
 
-func (c Child) FullName() string {
+func (c *Child) FullName() string {
 	return fmt.Sprintf("%s %s", c.FirstName, c.LastName)
 }

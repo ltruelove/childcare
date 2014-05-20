@@ -6,7 +6,7 @@ type Event struct {
 	Id        int
 	Type      string
 	Date      time.Time
-	Child     Child
+	Child     *Child
 	Caregiver Caregiver
 	Notes     string
 }
